@@ -25,6 +25,14 @@ public class LoginPageActions {
     public void enterLoginCredentials(String userName, String password) {
         enterText(LoginPageObjects.USER_NAME, userName);
         enterText(LoginPageObjects.PASSWORD, password);
-        //click log in button
+        clickElement(LoginPageObjects.LOGIN_BUTTON);
     }
+
+    public void clickElement(By by) {
+        WebElement checkInput = driver.findElement(by);
+        checkInput.click();
+    }
+
+
+
 }

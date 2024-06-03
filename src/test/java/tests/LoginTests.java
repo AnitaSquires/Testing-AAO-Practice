@@ -44,6 +44,11 @@ public class LoginTests {
         );
     }
 
+    @Test
+    void TestLoginFeatures() {
+        loginPageActions.enterLoginCredentials("standard_user", "secret_sauce");
+    }
+
 
     @AfterAll
     void afterAll() {
